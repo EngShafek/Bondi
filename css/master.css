@@ -1,0 +1,284 @@
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.main-heading::after{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    background-color: var(--green-color);
+}
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .nav-item .nav-link{
+    color: white;
+}
+.navbar .nav-item .active,
+.navbar .nav-item .nav-link:focus,
+.navbar .nav-item .nav-link:hover{
+    color: var(--green-color);
+}
+.navbar .search{
+    border-left: 1px solid var(--green-color);
+}
+.navbar .search svg{
+    color: var(--green-color);
+}
+.navbar .navbar-toggler{
+    color: white;
+    border-color:white ;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .collapse button{
+    color: var(--yellow-color);
+    border: none;
+    background-color: var(--red-color);
+}
+.navbar .collapse button:hover{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.landing{
+    background-color: var(--dark-color);
+    height: calc(100vh - 72px);
+}
+.landing button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border: none;
+}
+.landing button:hover{
+    background-color: var(--red-color) !important;
+    color: var(--yellow-color) !important;
+}
+.features .icon-box{
+    height: 200px;
+}
+.features .icon-box .number{
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    color: var(--section-color);
+    height: 180px;
+}
+.features .icon-box .icon{
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    color: var(--green-color);
+    height: 80px;
+}
+.features .feat h4{
+    color: var(--yellow-color) !important;
+}
+.work{
+    background-color: var(--section-color);
+}
+.work ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.work ul li.active {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border-radius: 40%;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    -ms-border-radius: 40%;
+    -o-border-radius: 40%;
+}
+.work ul li:not(.active):hover{
+    color: var(--red-color);
+
+}
+.work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.work .box::before{
+    position: absolute;
+    content: attr(data-work);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #33d1cc65;
+    left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 800;
+    font-size: 21px;
+    transition: all 0.4s;
+    transform: translate(calc(100% + 5px));
+    -webkit-transform: translate(calc(100% + 5px));
+    -moz-transform: translate(calc(100% + 5px));
+    -ms-transform: translate(calc(100% + 5px));
+    -o-transform: translate(calc(100% + 5px));
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+.work .box:hover::before{
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+}
+.work button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.work button:hover{
+    background-color: var(--red-color) !important;
+    color: var(--yellow-color) !important;
+}
+.stuff button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border: none;
+}
+.stuff button:hover{
+    background-color: var(--red-color) !important;
+    color: var(--yellow-color) !important;
+}
+.team{
+    background-color: var(--section-color);
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.team h5{
+    padding: 10px;
+    color: white;
+    background-color: var(--green-color);
+}
+.team p{
+    padding: 10px 5px;
+    font-size: 14px;}
+.start{
+    background-color: var(--dark-color);
+}
+.start h3{
+    color: white;
+}
+.start button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border: none;
+}
+.start button:hover{
+    background-color: var(--red-color) !important;
+    color: var(--yellow-color) !important;
+}
+.blog button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border: none;
+}
+.blog button:hover{
+    background-color: var(--red-color) !important;
+    color: var(--yellow-color) !important;
+}
+.sub{
+    background-color: var(--yellow-color);
+}
+.sub input{
+    border: none;
+    border-bottom: 1px white solid;
+}
+.sub input:focus{
+    outline: none;
+}
+.sub input::placeholder{
+color: white;}
+.sub button{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+    border: none;
+}
+.sub button:hover{
+    background-color: var(--dark-color) !important;
+    color: var(--yellow-color) !important;
+}
+.footer{
+    background-color: var(--dark-color);
+
+}
+.footer button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border: none;
+}
+.footer button:hover{
+    background-color: var(--red-color) !important;
+    color: var(--yellow-color) !important;
+}
+
+.social li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.social li:first-child{
+    background-color:#1877f2 ;
+    color: white;
+}
+.social li:nth-child(2){
+    background-color:#1da1f2 ;
+    color: white;
+}
+.social li:nth-child(3){
+    background-color: #0077b5;
+    color: white;
+}
+.social li:last-child{
+
+    background-color: #f00;
+    color: white;
+}
+.ff{
+    color: var(--green-color);
+}
+.fff{
+    color: var(--yellow-color);
+}
